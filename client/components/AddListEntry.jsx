@@ -11,7 +11,6 @@ class AddListEntry extends React.Component {
     }
 
     handleInput(e) {
-        console.log(e.target.value);
         this.setState({
             text: e.target.value
         });

@@ -14,7 +14,6 @@ class App extends React.Component {
     }
 
     addItem(item) {
-        console.log('Attempting to add item', item);
         var currentTodos = [...this.state.todos];
         currentTodos.push(item);
         this.setState({
@@ -23,7 +22,6 @@ class App extends React.Component {
     }
 
     deleteItem(index) {
-        console.log('Attempting to delete');
         var currentTodos = [...this.state.todos];
         currentTodos.splice(index,1);
         this.setState({
